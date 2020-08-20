@@ -2,8 +2,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     font-family: 'Encode Sans', sans-serif;
-      background-color: lightgrey;
- 
+
 }
 
 .logo {
@@ -12,9 +11,9 @@ body {
 }   
 
 .navbar{
-    background-color: #e08d3c ;
+    background-color:darkseagreen;
     
-/*  orange darkseagreen   #ffa343*/
+/*  orange darkseagreen  #ffa343 #e08d3c  darkseagreen*/
 
 }
 .nav_boarder {
@@ -62,7 +61,7 @@ a {
 }
 
 .footer {
-    background-color: #fae8cd;
+    background-color: lightsteelblue;
     height: 5vw;
     padding-left: 45vw;
     
@@ -81,11 +80,10 @@ a {
 .aboutUs_link_home {
     font-size: 20px;
 }
-.volunteer_button_img, .donateGoods_button_img, .getFood_button_img {
-    padding-left: 0;
-    padding-right: 3vw;
-
-
+.greenimgs { 
+   width: 100px;
+    height: 100px;
+    
 }
 
 .howItWorks_container {
@@ -105,6 +103,13 @@ a {
     margin-bottom: 0.2vw;
 }
 
+.contactUs_link:hover {
+    color: black;
+    font-size: 1.3vw;
+    text-decoration: underline;
+    margin-bottom: 0.2vw;
+    
+}
 
 
 .aboutUs_blurb{
@@ -140,8 +145,7 @@ input {
     border-color: cornflowerblue;   
 }
 
-
-.volunteer_img, .donateGoods_img, .getHelp_img {
+ .donateGoods_img, .getHelp_img {
     margin-left: 5.5vw;
     margin-top: 3vw;
     margin-bottom: 3vw;
@@ -178,8 +182,23 @@ input {
 
 
       h1 {
-        text-align: left;
-            font-family: 'Noto Sans', sans-serif;
-            font-size: 3vw;
+        text-align: center;
+            font-size: 2vw;
+          font-family: 'Noto Sans', sans-serif;
         }
        
+h2 {
+    padding-top: 2.5vw;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+}
+h3 {
+    color: black;
+    font-size: 1.6vw;
+}
+
+p {
+    
+    font-size: 1.4vw;
+    padding-right: 2vw;
+}
