@@ -113,11 +113,18 @@ p {
 
     }
 
-    .footer {
+    footer {
         background-color: #fae8cd;
-        height: 10vw;
-        padding-left: 45vw;
-
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7vh;
 
     }
     .home_icon {
@@ -173,8 +180,7 @@ p {
         margin-left: 25%;
     }
     .getGoing_title {
-
-        padding-left: 30%;
+        font-weight: bold;
     }
 
     .form {
@@ -201,7 +207,6 @@ p {
     }
     .getGoing_blurb {
         text-align: center;
-        padding-left: 3.5vw;
     }
     .home_icon {
         height: 3vw;
@@ -229,6 +234,9 @@ p {
     }
     input {
         width: 100%;
+    }
+    getGoing_image {
+        
     }
 
 }
@@ -320,10 +328,18 @@ p {
 
     }
 
-    .footer {
+    footer {
         background-color: #fae8cd;
-        height: 5vw;
-        padding-left: 45vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7vh;
 
 
     }
@@ -379,8 +395,8 @@ p {
         margin-left: 25%;
     }
     .getGoing_title {
-
-        padding-left: 30%;
+        font-weight: bold;
+        
     }
 
     .form {
@@ -535,12 +551,18 @@ p {
 
     }
 
-    .footer {
+    footer {
         background-color: #fae8cd;
-        height: 5vw;
-        padding-left: 45vw;
-
-
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7vh;
     }
     .home_icon {
         height: 4vw;
@@ -594,8 +616,7 @@ p {
         margin-left: 25%;
     }
     .getGoing_title {
-
-        padding-left: 30%;
+        font-weight: bold;
     }
 
     .form {
@@ -631,9 +652,6 @@ p {
     .home_icon:hover {
         height: 3.5vw;
         width: 3.5vw;
-    }
-    #getGoing_button {
-
     }
 
     #furtherHelp_blurb {
