@@ -201,9 +201,10 @@ p {
 
 
     .volunteer_img, .donateGoods_img, .getHelp_img {
-        margin-left: 5.5vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin-left: 35%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+        
     }
     .getGoing_blurb {
         text-align: center;
@@ -417,9 +418,9 @@ p {
 
 
     .volunteer_img, .donateGoods_img, .getHelp_img {
-        margin-left: 5.5vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin-left: 40%;
+        margin-bottom: 5%;
+        margin-top: 3%;
     }
     .getGoing_blurb {
         text-align: center;
@@ -670,5 +671,4 @@ p {
         width: 23vw;
         align-content: center;
     }
-
 }
