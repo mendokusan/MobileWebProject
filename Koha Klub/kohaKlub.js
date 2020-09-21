@@ -1,4 +1,4 @@
-/*
+
 mounted: function(){
 this.loadItems();
 },
@@ -26,7 +26,7 @@ methods: {
 methods: {
     loadItems: function()
 }
-*/
+
 
 
 

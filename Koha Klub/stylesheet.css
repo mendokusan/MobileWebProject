@@ -201,7 +201,7 @@ p {
 
 
     .volunteer_img, .donateGoods_img, .getHelp_img {
-        margin-left: 5.5vw;
+        margin-left: 35%;
         margin-top: 3vw;
         margin-bottom: 3vw;
     }
@@ -238,11 +238,23 @@ p {
     getGoing_image {
         
     }
+    .form_style {
+        background-color: #e6f7eb;
+        align-content: center;
+        padding-top: 2vw;
+        height: 500px;
+        margin-bottom: 2vw;
+
+    }
+   /* .container {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }*/
 
 }
 
 @media only screen and (min-width: 768px){
-    
+
     .logo {
 
         width: 16vw;
@@ -453,11 +465,16 @@ p {
         font-size: 1.8vw;
         
     }
-    
+    .form_style {
+        background-color: #e6f7eb;
+        align-content: center;
+        padding-top: 2vw;
+    }
+    .container {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
 }
-
-
-
 
 
 
@@ -669,6 +686,15 @@ p {
     input {
         width: 23vw;
         align-content: center;
+    }
+    .form_style {
+        background-color: #e6f7eb;
+        align-content: center;
+        padding-top: 2vw;
+    }
+    .container {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
     }
 
 }
