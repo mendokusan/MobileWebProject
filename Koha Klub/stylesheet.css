@@ -27,6 +27,7 @@ a, h2 {
 }
 
 
+
 /*Size3 for small screens */
 @media only screen and (max-width: 768px) {
    
@@ -50,16 +51,21 @@ a, h2 {
         height: 0.2vw;
     }
 
+    .nav-item {
+        width: 100px;
+        box-sizing: border-box;
+    }
     .howItWorks_link {
 
         font-size: 2.7vw;
-        padding-right: 3.5vw;
+        /*padding-right: 1.5vw;*/
         color: dimgrey;
 
     }
     .howItWorks_link:hover {
         color: cornflowerblue;
         font-size: 3vw;
+       
         text-decoration: none;
 
     }
@@ -80,6 +86,7 @@ a, h2 {
         display: block;
         padding-top: 0;
         padding-left: 3vw;
+        margin-bottom: 5%;
 
     }
 
@@ -233,9 +240,7 @@ a, h2 {
         height: 3.5vw;
         width: 3.5vw;
     }
-    #getGoing_button {
-
-    }
+   
 
     #furtherHelp_blurb {
         max-width: 60%;
@@ -263,6 +268,42 @@ a, h2 {
         margin-bottom: 2vw;
 
     }
+    .getGoing_img_volunteer, .getGoing_img_donate, .getGoing_img_getHelp {
+        opacity: 0.8;
+        margin-top: 5%;
+    }
+    .getGoing_img_donate:hover {
+        opacity:1.5;
+        border-radius: 360px;
+        background: #cbe4f9;
+         /*background: url(images/donateGoods_button_hover.png) no-repeat; */
+        
+        
+    }
+    .getGoing_img_volunteer:hover {
+        opacity:1.5;
+        border-radius: 360px;
+        background: #cbe4f9;
+        /*background: url(images/volunteer_button_hover.png) no-repeat;*/
+        
+    }
+    .getGoing_img_getHelp:hover {
+        opacity:1.5;
+        border-radius: 360px;
+        background: #cbe4f9;
+        /*background: url(images/get_food_button_hover.png) no-repeat;*/
+
+    }
+    .foodbankWorker_button {
+        background-color: #FFE5E8;
+        margin-left: 34%;
+        margin-top: 2%;
+    }
+    #getGoing_button {
+        margin-left: 3%;
+    }
+    
+    
    /* .container {
         margin-top: 3vw;
         margin-bottom: 5vw;
@@ -315,7 +356,8 @@ a, h2 {
         display: block;
         padding-top: 0;
         justify-content: center;
-        padding-left: 9%;
+        margin-left: 13%;
+        margin-bottom: 2%;
     }
 
     h1 {
@@ -359,7 +401,8 @@ a, h2 {
         background-color: #cbe4f9;
     }
     .HIW_button {
-        margin-left: 38%;
+        margin-left: 40%;
+        width: 20%
 
     }
 
@@ -382,6 +425,10 @@ a, h2 {
         height: 4vw;
         width: 4vw;
     }
+    .nav-item {
+        width: 100px;
+        box-sizing: border-box;
+    }
 
     .howItWorks_link_home {
         font-size: 20px;
@@ -402,9 +449,6 @@ a, h2 {
         padding-right: 3vw;
         padding-bottom: 15vw;
 
-    }
-    .home_container {
-        padding-left: 5vw;
     }
     .contactUs_link {
         font-size: 1.3vw;
@@ -468,9 +512,7 @@ a, h2 {
         height: 3.5vw;
         width: 3.5vw;
     }
-    #getGoing_button {
 
-    }
 
     #furtherHelp_blurb {
         max-width: 60%;
@@ -484,12 +526,13 @@ a, h2 {
         border-color: #e6f7eb;
         border-radius: 2vw;
     }
-    p {
+    .home_paragraph {
         font-size: 1.8vw;
-        padding-left: 3vw;
-        padding-right: 6vw;
+        padding-left: 10%;
+        padding-right: 10%;
         
     }
+    
     .form_style {
         background-color: #e6f7eb;
         align-content: center;
@@ -499,6 +542,40 @@ a, h2 {
         margin-top: 3vw;
         margin-bottom: 5vw;
     }
+    .foodbankWorker_button {
+        background-color: #FFE5E8;
+        margin-left: 37%;
+        margin-top: 2%;
+    }
+    #getGoing_button {
+        margin-left: 3%;
+    }
+    .getGoing_img_volunteer, .getGoing_img_donate, .getGoing_img_getHelp {
+        opacity: 0.8;
+    }
+    .getGoing_img_donate:hover {
+        opacity:1.5;
+        border-radius: 360px;
+        background: #cbe4f9;
+         /*background: url(images/donateGoods_button_hover.png) no-repeat; */
+        
+        
+    }
+    .getGoing_img_volunteer:hover {
+        opacity:1.5;
+        border-radius: 360px;
+        background: #cbe4f9;
+        /*background: url(images/volunteer_button_hover.png) no-repeat;*/
+        
+    }
+    .getGoing_img_getHelp:hover {
+        opacity:1.5;
+        border-radius: 360px;
+        background: #cbe4f9;
+        /*background: url(images/get_food_button_hover.png) no-repeat;*/
+
+    }
+    
 }
 
 
@@ -508,7 +585,7 @@ a, h2 {
     p{
         font-size: 1.5vw;
         padding-left: 2.5vw;
-        
+        padding-right: 0.5vw;
     }
     
     .logo {
@@ -526,11 +603,22 @@ a, h2 {
         background-color: white;
         height: 0.4vw;
     }
-
+    
+    .nav-item {
+        box-sizing: border-box;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #D9EDF4;
+        width: 40vw;
+    }
+    
     .howItWorks_link {
 
         font-size: 1.6vw;
-        padding-right: 3.5vw;
+        
         color: dimgrey;
 
     }
@@ -620,18 +708,11 @@ a, h2 {
         height: 7vh;
     }
     .home_icon {
-        height: 4vw;
-        width: 4vw;
+        /*height: 4vw;
+        width: 4vw;*/
+        padding-right: 0;
     }
 
-    .howItWorks_link_home {
-        font-size: 20px;
-        padding-left: 45vw;
-        padding-right: 5vw;
-    }
-    .aboutUs_link_home {
-        font-size: 20px;
-    }
     .volunteer_button_img, .donateGoods_button_img, .getFood_button_img {
         padding-left: 0;
         padding-right: 3vw;
@@ -726,15 +807,16 @@ a, h2 {
         text-align: center;
         padding-left: 3.5vw;
     }
+    /*
     .home_icon {
         height: 3vw;
         width: 3vw;
     }
     .home_icon:hover {
-        height: 3.5vw;
-        width: 3.5vw;
+        height: 3.3vw;
+        width: 3.3vw;
     }
-
+*/
     #furtherHelp_blurb {
         max-width: 60%;
         text-align: center;
@@ -760,4 +842,13 @@ a, h2 {
         margin-top: 3vw;
         margin-bottom: 5vw;
     }
+    .foodbankWorker_button {
+        background-color: #FFE5E8;
+        margin-left: 23%;
+        margin-top: 5%;
+    }
+    #getGoing_button {
+        padding: 2%;
+    }
 }
+
