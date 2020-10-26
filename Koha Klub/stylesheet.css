@@ -25,6 +25,39 @@ p {
 a, h2 {
      font-family: 'Commissioner', sans-serif;
 }
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    margin-left: 45%;
+}
+
+.hero {
+    background-color: red;
+    background-size: cover;
+    padding: 4rem, 2rem;
+    /*display: grid; */
+    /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+    align-items: center;
+    height: 40%;
+}
+.hero > h1 {
+    font-size: 3vw;
+    padding-bottom: 1rem;
+}
+.hero > article > p {
+    font-size: 4rem;
+    font-weight: 200;
+    padding-top: 50%;
+    
+}
+.hero > article > a {
+    padding: 1rem;
+    margin-top: .75rem;
+}
+
 
 
 
@@ -606,19 +639,20 @@ a, h2 {
     
     .nav-item {
         box-sizing: border-box;
+        width: inherit;
+        text-align: center; 
+        padding-right: 0;
     }
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+    .nav-item:hover {
         background-color: #D9EDF4;
-        width: 40vw;
+        border-radius: 20px;
+        /*width: 40vw; */
+        
     }
     
     .howItWorks_link {
 
         font-size: 1.6vw;
-        
         color: dimgrey;
 
     }
@@ -631,12 +665,12 @@ a, h2 {
     .navbar-toggler-icon {
         color: cornflowerblue;
     }
-    .aboutUs_link {
+    /*.aboutUs_link {
 
         padding-right: 5vw;
         font-size: 3vw;
 
-    }
+    } */
 
     .homePage_img {
         max-width:60vw;
