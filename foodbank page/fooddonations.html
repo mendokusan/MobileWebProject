@@ -3,7 +3,7 @@
   <head>
 
          <title>foodbank page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
       
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,27 +17,26 @@
 
         <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-           <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
-      
-       <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-      
-      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-      
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+        
       
     <link rel="stylesheet" href="foodbank.css" >
       
     <meta charset="utf-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+      
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
     </head>
         
-<body>  
-    
-          
+<body>          
         
-      
-       <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm">
              
                  
             <a class="navbar-brand" href="index.html">
@@ -87,17 +86,22 @@
                      </div>
                     
                  </nav>
-    <br><br> <br>  
-   
-<h1><img class="blackimgs" src="images/volunteer.png">Volunteers <img class="blackimgs" src="images/volunteer.png" >   </h1>  
+    <br><br><br>
+                        
+
+ 
+
+<h1>  <img class="blackimgs" src="images/getHelp.png" >Food Donations  <img class="blackimgs" src="images/getHelp.png" ></h1> 
     
-    <hr class="line"> <br> <br>
     
-     <div id="volunteersPage">
+    
+      <hr class="line"> <br> <br>
+    
+     <div id="donationsPage">
     
         <div class="container">
             
-            <div id="volunteersCard">
+            <div id="donationsCard">
                 
                 
                 <div class="row">
@@ -106,14 +110,14 @@
        
                         <div class="card-body">
                             
-                            <h5 class="card-title">{{ item['fields']['Full Name'] }}</h5>
+                            <h5 class="card-title"><strong>{{ item['fields']['Name/Buisness Name'] }} </strong></h5>
                             <!--Grabbing the titles of the movies and outputting them as h5-->
                             
-                            <p class="card-text">phone number: {{ item['fields']['Phone Number'] }}</p>
+                            <p class="card-text">description: {{ item['fields']['Donation Description'] }}</p>
                             
                             <!-- Link trigger modal -->
 
-                            <button class="moreinfo-btn grow"><a data-toggle="modal" data-target="#moreinfotModalForm" v-on:click="updateSelectedItem(item)">more information</a></button>
+                            <button class="moreinfo-btn grow"><a data-toggle="modal" data-target="#moreinfotModalForm" v-on:click="updateSelectedItem(item)"> more information ></a></button>
                             
                             <br>
 
@@ -124,20 +128,20 @@
                  <div class="modal-body">
                             
                      <!-- Modal -->
-                     <div v-for="item in items" v-if="item==selectedItem" class="modal fade" id="moreinfotModalForm" tabindex="-1" role="dialog" aria-labelledby="volunteersModalLabel" aria-hidden="true">
+                     <div v-for="item in items" v-if="item==selectedItem" class="modal fade" id="moreinfotModalForm" tabindex="-1" role="dialog" aria-labelledby="donationsModalLabel" aria-hidden="true">
                          <div class="modal-dialog" role="document">
-                             <div class="modal-content volunteers-form">
+                             <div class="modal-content donations-form">
                                  <div class="modal-header">
-                                     <h6 class="volunteers-form-heading"> <strong>{{ item['fields']['Full Name'] }} </strong></h6>
+                                     <h6 class="donations-form-heading"> {{ item['fields']['Name/Buisness Name'] }}</h6>
                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                          <span aria-hidden="true">&times;</span>
                                      </button>
                                  </div>
                                  <div class="modal-body">
-                                    
-                                    <p><strong>email:</strong> {{ item['fields']['Email'] }}</p>
-                                    <p><strong>age:</strong> {{ item['fields']['Age'] }}</p>
-                                     <p><strong>any other information:</strong> {{ item['fields']['Any other information?'] }}</p>
+                                     <p><strong>phone number:</strong> {{ item['fields']['Phone Number'] }}</p>
+                                    <p><strong>email: </strong> {{ item['fields']['Email'] }}</p>
+                       <p><strong> pick up/drop off: </strong>{{ item['fields']['pick up/drop off'] }}</p>
+                                     <p><strong>any other details?</strong> {{ item['fields']['any other details?'] }}</p>
                                  </div>
                                  
                              </div>
@@ -161,11 +165,12 @@
        
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
         
-    <script src="volunteers_vue.js"></script>
-  
+    <script src="donations_vue.js"></script>
     
+   
+        </nav>
+  
     
         </body>
         
 </html>
-

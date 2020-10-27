@@ -22,7 +22,7 @@ p {
     padding-right: 2vw;
 }
 
-a, h2 {
+a, h2, h1, article {
      font-family: 'Commissioner', sans-serif;
 }
 .navbar-nav {
@@ -35,30 +35,17 @@ a, h2 {
 }
 
 .hero {
-    background-color: red;
-    background-size: cover;
-    padding: 4rem, 2rem;
+    background-color: #FAEFE5;
+    /*background-size: cover;
+    /*padding: 4rem, 2rem;*/
     /*display: grid; */
     /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
     align-items: center;
-    height: 40%;
+    height: 7vw;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: -2%;
 }
-.hero > h1 {
-    font-size: 3vw;
-    padding-bottom: 1rem;
-}
-.hero > article > p {
-    font-size: 4rem;
-    font-weight: 200;
-    padding-top: 50%;
-    
-}
-.hero > article > a {
-    padding: 1rem;
-    margin-top: .75rem;
-}
-
-
 
 
 /*Size3 for small screens */
@@ -885,4 +872,60 @@ a, h2 {
         padding: 2%;
     }
 }
+
+
+
+
+
+
+.hero_header {
+    color: ;
+    width: 150%;
+    /*background-color: #EEDCE7 ; */
+    width: 50%;
+    height: 7vw;
+
+}
+
+.hero_header > h1 {
+    font-size: 2vw;
+    margin-top: -5%;
+    margin-left: -20%;
+}
+.hero_button {
+    background-color: whitesmoke;
+    border: 0;
+    margin-top: 1%;
+
+}
+
+article {
+    margin-top: 3%;
+}
+
+
+/* Code copied but doesn't work.
+
+
+.hero > h1 {
+    font-size: 2vw;
+    color: red;
+  
+}
+.hero > article > p {
+    font-size: 4rem;
+    font-weight: 200;
+    /*padding-top: 50%; 
+    
+}
+.hero > article > a {
+    padding: 1rem;
+    margin-top: .75rem;
+    border: 2px;
+    
+}
+.hero_button {
+    border: 2px;
+}
+*/
 
