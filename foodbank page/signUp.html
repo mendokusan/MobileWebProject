@@ -2,6 +2,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="foodbank.css" />
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <title>FoodBank</title>
 </head>
@@ -20,10 +22,14 @@
                 <input type="password" id="signup-password" required />
             </div>
             <div class="input-field">
-                <label for="signup-bio">One Line Bio</label>
-                <input type="text" id="signup-bio" required />
-            </div>
+            <input type="radio" id="signup-volunteer" name="signup-volunteer" value="signup-volunteer">
+            <label for="signup-volunteer">Volunteer</label><br>
+            <input type="radio" id="signup-donor" name="signup-donor" value="signup-donor">
+            <label for="signup-donor">Donor</label><br>
+            <input type="radio" id="signup-collectors" name="signup-collectors" value="signup-collectors">
+            <label for="signup-collectors">Collectors</label><br>
             <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+            </div>
         </form>
     </div>
 </div>
