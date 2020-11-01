@@ -23,7 +23,7 @@ body {
 
 .howItWorks_link {
 
-    font-size: 1.6vw;
+    font-size: 0.7vw;
     padding-right: 3.5vw;
     color: dimgrey;
 
@@ -73,7 +73,6 @@ a {
 }
 
 .howItWorks_link_home {
-    font-size: 20px;
     padding-left: 45vw;
     padding-right: 5vw;
 }
@@ -117,7 +116,6 @@ a {
 }
     
 
-}
 .img_title {
 
     max-width: 50%;
@@ -162,9 +160,9 @@ input {
     height: 3.5vw;
     width: 3.5vw;
 }
-#getGoing_button {
+/* #getGoing_button {
 
-}
+} */
 
 #furtherHelp_blurb {
     max-width: 60%;

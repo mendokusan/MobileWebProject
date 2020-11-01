@@ -1,117 +1,179 @@
 <!DOCTYPE html>
-    <html lang="en">
-  <head>
+<html lang="en">
 
-         <title>foodbank page</title>
-    
-  <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+<head>
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>foodbank page</title>
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="stylesheet.css">
-        
-      
-    <link rel="stylesheet" href="foodbank.css" >
-    </head>
-        
-<body>  
-    
-          
-        
-       <nav class="navbar navbar-expand-sm">
-             
-                 
-            <a class="navbar-brand" href="index.html">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!--Materialized CSS-->
+    <link rel="styleshet" href="materialize.min.css" />
+
+
+
+    <link rel="stylesheet" href="foodbank.css">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-sm">
+
+
+        <a class="navbar-brand" href="index.html">
             <img src="images/koha%20klub%20logo%20with%20writing.png" alt="Logo" class="logo">
-            </a>
-            <br>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon">...</span>
-            </button>
-             
-             <div class="collapse navbar-collapse" id="collapsibleNavbar" >
-            
-                 
-                 <ul class="navbar-nav ml-auto">
-                     <div class="d-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="howItWorks_link" href="schools.html"> Schools  </a>
-                     </li>
-                     
-                         <li class="nav-item">
-                         <a class="howItWorks_link"> | </a>
-                         </li>
-                         
-                     <li class="nav-item">
-                        <a class="howItWorks_link" href="browsefood.html"> Browse Food</a>
-                     </li>
-                    
-                         <li class="nav-item">
-                         <a class="howItWorks_link"> | </a>
-                         </li>
-                         
-                           <li class="nav-item">
-                        <a class="howItWorks_link" href="volunteers.html"> Volunteers</a>
-                     </li>
-                     
-                    <li class="nav-item">
-                         <a class="howItWorks_link"> | </a>
-                         </li>
-                         
-                            <li class="nav-item">
-                        <a class="howItWorks_link" href="dropoff.html"> Drop Off</a>
-                     </li>
-                         
-                           <li class="nav-item">
-                         <a class="howItWorks_link"> | </a>
-                         </li>
-                         
-                     <li class="nav-item">
-                        <a href="index.html" class="howItWorks_link"><img src="images/home_icon.png" width="5%;"  class="home_icon" ></a>
-                     </li>
-                     </div>
-                 </ul>
-                     </div>
-                    
-                 </nav>
-   
-            <nav class="nav_boarder"></nav>
-        <div class="home_container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="homePage_info">
+        </a>
         <br>
-        <h2> Welcome to the foodbank section of Koha Klub!</h2>
-                    
-        <br>
-        <p> Above you can view volunteers, browse surplus food from other foodbanks and post food surplus food from your own food bank. You can also see what schools are in need of food in your area.  
-           </p>
-        
 
-                        <br>
-        
-            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">...</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+
+            <ul class="navbar-nav ml-auto">
+                <div class="d-flex align-items-center">
+
+                    <li class="nav-item logged-in">
+                        <a href="#" class="howItWorks_link grey-text modal-trigger"
+                            data-target="modal-account">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="logged-in">
+                        <a href="#" class="howItWorks_link grey-text" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="logged-in">
+                        <a href="#" class="howItWorks_link grey-text modal-trigger" data-target="modal-create">Create
+                            Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="logged-out">
+                        <a href="#" class="howItWorks_link grey-text modal-trigger" data-target="modal-login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="logged-out">
+                        <a href="#" class="howItWorks_link grey-text modal-trigger" data-target="modal-signup">Sign
+                            up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link" href="schools.html"> Schools </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link" href="browsefood.html"> Browse Food</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link" href="volunteers.html"> Volunteers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link" href="dropoff.html"> Drop Off</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="howItWorks_link"> | </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html" class="howItWorks_link"><img src="images/home_icon.png" width="5%;"
+                                class="home_icon"></a>
+                    </li>
+                </div>
+            </ul>
         </div>
-            <div class="col-lg-9">
-                <img src="images/homePage.gif" class="homePage_img">
-    
-                    
+
+    </nav>
+
+    <nav class="nav_boarder"></nav>
+    <div class="home_container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="homePage_info">
+                    <br>
+                    <h2> Welcome to the foodbank section of Koha Klub!</h2>
+
+                    <br>
+                    <p> Above you can view volunteers, browse surplus food from other foodbanks and post food surplus
+                        food from your own food bank. You can also see what schools are in need of food in your area.
+                    </p>
+                    <br>
                 </div>
             </div>
+            <div class="col-lg-9">
+                <img src="images/homePage.gif" class="homePage_img">
+            </div>
         </div>
-        <nav class="nav_boarder"></nav>
-        <nav class="navbar navbar-expand-sm footer"> 
-            <a class="contactUs_link" href="contact_us.html"> Click here to contact us.</a>
-        </nav>
-    
-    </body>
+    </div>
+    <!--Login-->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4><br />
+            <form id="login-form">
+                <div class="input-field">
+                    <input type="email" id="login-email" required />
+                    <label for="login-email">Email address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" required />
+                    <label for="login-password">Your password</label>
+                </div>
+                <button class="btn yellow darken-2 z-depth-0">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <nav class="nav_boarder"></nav>
+    <nav class="navbar navbar-expand-sm footer">
+        <a class="contactUs_link" href="contact_us.html"> Click here to contact us.</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+</body>
 
 </html>
