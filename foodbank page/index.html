@@ -143,28 +143,24 @@
     <!--Sign Up-->
     <div id="modal-signup" class="modal">
         <div class="modal-content">
-            <h4>Sign up</h4><br />
-            <form id="signup-form">
-                <div class="input-field">
-                    <label for="signup-email">Email address</label>
-                    <input type="email" id="signup-email" required />
-                </div>
-                <div class="input-field">
-                    <label for="signup-password">Choose password</label>
-                    <input type="password" id="signup-password" required />
-                </div>
-                <div class="input-field">
-                    <input type="radio" id="signup-volunteer" name="signup-volunteer" value="signup-volunteer">
-                    <label for="signup-volunteer">Volunteer</label><br>
-                    <input type="radio" id="signup-donor" name="signup-donor" value="signup-donor">
-                    <label for="signup-donor">Donor</label><br>
-                    <input type="radio" id="signup-collectors" name="signup-collectors" value="signup-collectors">
-                    <label for="signup-collectors">Collectors</label><br>
-                    <button class="btn yellow darken-2 z-depth-0">Sign up</button>
-                </div>
-            </form>
+          <h4>Sign up</h4><br />
+          <form id="signup-form">
+            <div class="input-field">
+              <input type="email" id="signup-email" required />
+              <label for="signup-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="signup-password" required />
+              <label for="signup-password">Choose password</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="signup-bio" required>
+              <label for="signup-bio">One Line Bio</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+          </form>
         </div>
-    </div>
+      </div>
 
     <!--Login-->
     <div id="modal-login" class="modal">
